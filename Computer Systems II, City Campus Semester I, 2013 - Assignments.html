@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0079)https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="This course is divided into two parts. The first part introduces students to basics of operating systems, and how to interact with the Unix OS using shell scripting. The second part deals with computer networks and security.">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta http-equiv="cache-control" content="no-cache">
+	<title>Computer Systems II, City Campus Semester I, 2013 - Assignments</title>
+	
+
+	<link href="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/all.css" type="text/css" rel="stylesheet" media="screen">
+  
+<!--[if lt IE 7]>
+<script type="text/javascript" src="javascript/pngfix.js"></script>
+<script src="obst715/javascript/IE7.js" type="text/javascript"></script>
+<![endif]-->
+
+	<script type="text/javascript" async="" src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/ga.js"></script><script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/all.js" type="text/javascript"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/jquery-1.6.2.min.js"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/jquery-ui-1.8.2.custom.min.js"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/jquery.qtip-1.0.min.js"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/cloud-zoom.1.0.2.min.js"></script>
+	<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/formatFootnotes.js"></script>
+
+
+
+<script type="text/javascript" language="javascript">
+	var clicks = 0;
+	var blind = 0;
+	var showForm = 0;
+	var commentsShowed=0;
+	var objBrowse = navigator.appName;
+
+	function toggleFullScreen(evt) {
+		var tmpStyle = new Array();
+		var leftNaviPaneWidth = 169;
+		var leftNaviPaneWidth1 = leftNaviPaneWidth +1;
+		var marginLeftMain = leftNaviPaneWidth + 11;
+		if ( blind ) { 
+			blind=0; 
+			setCookie( 'blind', 0 );
+			jQuery('#header').slideDown();
+			jQuery('#navcontainer').slideDown();
+			jQuery( '#main' ).css ( { 'marginLeft':marginLeftMain + 'px' } ); 
+			jQuery( '#content-outer' ).removeClass( 'nobackgroundimage' );
+			jQuery( '#content' ).removeClass( 'nobackgroundimage' );
+			jQuery( '#content-outer' ).css( {'background':'url(images/side_nav_back.png) repeat-y '+ (leftNaviPaneWidth1 )+'px '} );
+			jQuery( '#content' ).css( {'background':'url(images/side_nav_back.png) repeat-y '+ (leftNaviPaneWidth1 )+'px '} );
+
+			document.getElementById('toggleMenu').innerHTML='Hide Navigation';
+
+		} else { 
+			blind=1; 
+			setCookie( 'blind', 1 );  
+			jQuery('#header').slideUp(); 
+			jQuery('#navcontainer').slideUp();
+			jQuery( '#content-outer' ).addClass( 'nobackgroundimage' );
+			jQuery( '#content' ).addClass( 'nobackgroundimage' );
+			jQuery( '#main' ).css( { 'marginLeft':'0px' } ); 
+			document.getElementById('toggleMenu').innerHTML='Show Navigation';
+		} 
+	}
+
+ 	function startup() {
+
+		/* check if url contain hidemenu*/
+		pageStartUpCheck();
+		imgDecorate();
+		//fixTabHeight();
+		checkTarget( location.hash ); //see if url has target in accordion or tab, if so, show the target
+		showPNG();
+		displayRemoveFrameLink();
+
+		return true;
+	}
+</script>
+	<style>
+	
+		body {
+			background: #e8e8e8 url( 'images/pageBg.gif' ) top center repeat-y;
+		}
+		#content-outer,#content {
+			background: #ffffff;
+			width: 990px;
+		}
+		#footer {
+			width:990px;
+		}
+
+	.header {
+		background-color:#F0F8FE;
+		width:100%;	
+		height:148px;
+		background-image:url( images/bannerbg.png );
+		background-repeat:repeat-x;
+	}
+		#main a:visited { 
+			padding-right: 12px; 
+			background: url( images/tick.gif) no-repeat 100% 50%;
+		}	
+
+	.courseTitle {
+		color: #fff;
+	}
+
+		#main, #tasks, #resources {
+			background-color: #ffffff;
+		}
+		a:link, a:visited {
+			color: #0033CC;
+		}
+	
+		#navcontainer {
+			width:169px;
+		}
+		/*#main, #footer {*/
+		#main {
+			margin-left: 179px;
+		}
+		#content-outer,#content{ background: url('images/side_nav_back.png') repeat-y 170px; }
+	h1 {
+color:#B32D5D !important;
+}
+h2 {
+color:#B32D5D !important;
+}
+h3 {
+color:#B32D5D !important;
+}
+a {
+outline:none;
+}
+span .header_nav {
+color:#333333;
+}
+#navcontainer a {
+font-size:1em;
+}
+#navcontainer a:link, #navcontainer a:visited {
+color:#333333;
+border-top: 2px solid #efd9e1;
+}
+#navcontainer #active a {
+background-color:#cd7f9b !important;
+color:#ffffff!important;
+}
+.bar {
+background:#efd9e1;
+border-bottom:1px solid #cd7f9b;
+}
+.bar a:link, .bar a:visited {
+color:#000000 !important;
+}
+div #active, #submenu_topic #active, #submenu_topic a {
+font-size:1.0em;
+}
+
+a.glossary {
+text-decoration:none !important;
+}
+.controls span a {
+color:#ffffff !important;
+}
+#main {
+border:2px solid #cd7f9b !important;
+
+}
+#main a:link, #main a:visited {
+text-decoration:underline;
+}
+#content {
+background-color:#f4f4f4;
+}
+.rubyt {
+height:1.3em !important;
+}
+h1, h2, h3 {
+color:#1e5a96;
+}
+h4 {
+color: #000;
+}
+
+.mediaLinkW a:link, .mediaLinkQ a:link {
+padding-left:4px;
+padding-right:4px;
+}
+dl {
+padding:2px 2px 0 2px;
+background:#fff;
+}
+.accordion_toggle {
+margin-bottom: 2px;
+}
+
+.iiDiv {
+margin: 1em 0 0 0;
+background: #d8dfe3;
+}
+
+.iiDiv {
+background:#e1e4e6;
+}
+.glossary{
+border-bottom:1px dotted #317082;
+color:#990000 !important;
+}
+div.scroller {
+background-color:#fff;
+}
+
+.popup {
+color:#000000;
+font-size:1.0em;
+font-style:normal !important;
+}
+a.toolTip, a:hover.toolTip {
+border-bottom-width: 1px;
+border-bottom-style: dotted;
+border-bottom-color: #317082;
+color: #990000 !important;
+text-decoration:none !important;
+}
+.container {
+border: none;
+}
+
+.sectionTitle {
+display:none;
+}
+	</style>
+  <link href="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/template_print.css" type="text/css" rel="stylesheet" media="print">
+<!--[if lt IE 7]>
+<style type="text/css">
+.circleShadow {
+	display:none;
+}
+</style>
+<![endif]-->
+<!--[if IE 7]>
+	<style type="text/css">
+	.box {
+		border: solid #eee 1px;
+		height:1.5em;
+	}
+	.boxContainer img.gradient {
+		height:20%;
+		overflow:hidden;
+	}
+	.shadow-container .shadow2,
+    .shadow-container .shadow3, .shadow-container .shadow4 {
+		height: 99%;
+	}
+	</style>
+<![endif]-->
+</head>
+<body onload="startup();" onbeforeunload="hideDiv();" scroll="yes">
+<a name="top"></a>
+<div id="content-outer">
+<div id="content">
+
+
+<div id="header" class="header" style="position:relative;">
+	<div style="background:url( images/lake_coleridge_new_zealand-1280x800.jpg ) no-repeat left transparent;height:148px;">
+			<img src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/uoa.png" style="float: right; visibility: visible; " align="middle" border="0">
+	</div>
+		<span style="float:right;position:absolute;top:10px;right:190px;"><form action="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/search.html">
+<div style="float: left;"><input type="text" name="q" id="tipue_search_input" placeholder="enter keywords"></div>
+<div style="float: left; margin-left: 8px;"><input type="button" id="tipue_search_button" onclick="this.form.submit();" value="search"></div>
+</form></span>
+</div>
+
+<!-- headerBar starts-->
+<div class="bar">
+&nbsp;
+
+<span id="toggleMenuContainer" style="border:solid #fff; border-width:0 ;padding-left: 5px; padding-right: 5px; color:white;"><a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2.html#nogo" accesskey="m" id="toggleMenu" onclick="toggleFullScreen();return false;">Hide Navigation</a> </span>
+
+</div>
+
+
+<!-- navigation container -->
+<div id="navcontainer">
+	<!--div class="topics"></div-->
+								<div><a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/index.html">Home</a></div>
+
+				<div>
+					<a id="topic6" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/6.html">Textbooks</a>
+				</div>
+				<div>
+					<a id="topic1" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/1.html">Lecture Material</a>
+				</div>
+				<div>
+					<a id="topic3" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/3.html">Tutorials</a>
+				</div>
+				<div id="active">
+					<a id="topic2" href="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/Computer Systems II, City Campus Semester I, 2013 - Assignments.html">Assignments</a>
+				</div>
+				<div>
+					<a id="topic4" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/4.html">Test and Final Exam</a>
+				</div>
+				<div>
+					<a id="topic7" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/7.html">Class Representatives</a>
+				</div>
+				<div>
+					<a id="topic8" href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/8.html">Academic Honesty</a>
+				</div>
+</div> <!--end navcontainer div -->
+
+<!-- main content starts -->
+
+<div id="main">
+<div style="display:none;float:right;clear:right;font-size:smaller;" id="removeFrameLink"><a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/index.html" target="_blank" title="open in new window">Remove Frame<img src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/new_window.gif" border="0" align="absmiddle"></a></div>
+	<table border="0" cellpadding="5" cellspacing="0" width="99%">
+		<tbody><tr>
+			<td>
+				
+				
+			</td>
+		</tr>
+	</tbody></table>
+	
+	<!--need parse h3 header -->
+	
+	<h1 class="topicTitle noParse"> Assignments</h1>
+	
+
+
+
+<div id="content1_" class="clear"></div>
+
+
+
+
+
+
+
+
+<!--start freetext content area-->
+	
+		
+		<h2 id="Assignment1" class=""><img src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/black_n_blue_analyse1.png" align="middle" style="visibility: visible; "> Assignment 1</h2>
+
+
+<p>Assignment 1 can be downloaded <a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2/files/assignment1_215.pdf" target="_self" onclick="createTarget( &#39;2/files/assignment1_215.pdf&#39;, &#39;&#39;);return false;">here</a>. </p><p>Problem 1: Code template for question 1 can be found <a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2/files/question1javafiles.zip" target="_self" onclick="createTarget( &#39;2/files/question1javafiles.zip&#39;, &#39;&#39;);return false;">here</a>. You can assume that the process list is sorted according to arrival time. [OPTIONAL: For those who want some challenge, they may implement a sort functionality into the code such that the input process list is sorted by arrival time before being processed.] While we will not test this situation, if two processes arrive at the same time, then they would be processed in sequential order.</p><p><a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2/files/test_input.txt" target="_self" onclick="createTarget( &#39;2/files/test_input.txt&#39;, &#39;&#39;);return false;">Sample input file 1</a> <a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2/files/test2.txt" target="_self" onclick="createTarget( &#39;2/files/test2.txt&#39;, &#39;&#39;);return false;">Sample input file 2 </a></p><p>Problem 6: Copy the following code and save as dirtree.sh (do not copy "----------" at the beginning and end of the code)</p><p>----------</p><p>#!/bin/sh<br># dirtree : print a hierarchy tree starting at specified directory <br># Usage: dirtree <br><br><br>(cd ${1-.};pwd); <br>find ${1-.}&nbsp; -print | sort -f | sed -e "s,^${1-.},," -e "/^$/d" -e "s,[^/]*/\([^/]*\)$,\`---\1," -e "s,[^/]*/,|&nbsp;&nbsp; ,g"&nbsp; </p><p>------------</p><p><font color="#FF0000">The submission deadline is April 14 11:00 pm.&nbsp; Submissions will be handled by ADB. The submission link is <a href="https://adb.auckland.ac.nz/">here</a>. You will be allowed to submit ONE (1) .zip file. Please make sure that every file contains your name and student id. For example, in your java programs and bash scripts, include your name and student id using comments. Please check out the system before the submission deadline, and report any issues to the instructor or tutor.</font></p>
+
+<!--end freetext content area-->
+
+
+
+
+
+<div id="content2_" class="clear"></div>
+
+
+
+
+
+
+
+
+<!--start freetext content area-->
+	
+		
+		<h2 id="Assignment2" class=""><img src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/black_n_blue_analyse1.png" align="middle" style="visibility: visible; "> Assignment 2</h2>
+
+
+Details to come soon.
+
+<!--end freetext content area-->
+
+
+
+
+	
+	<div id="footnoteholder" class="footnoteholder"></div>
+
+	<div class="noprt navLinks" align="right">
+		<a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/2.html#top" class="top" style="float:left;"><img src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/up.gif" width="17" height="16" alt="top" border="0"></a>
+			« <a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/3.html" class="previousLink">previous page</a> 
+			|
+			<a href="https://www.coursebuilder.cad.auckland.ac.nz/flexicourses/2086/publish/1/4.html" class="nextLink">next page</a> »
+	</div>
+	<div class="clear"></div>	
+
+			<div class="clear"></div>	
+		</div><!--end main div -->
+
+		</div> <!--end content div -->
+<script src="./Computer Systems II, City Campus Semester I, 2013 - Assignments_files/islogin.php"></script>
+<script>
+	formatFootnotes('main','footnoteholder');
+jQuery(document).ready(function() {
+});
+</script>
+
+		<div id="dummyspan"></div>
+		<div id="bubble_tooltip" onmouseout="document.getElementById(&#39;bubble_tooltip&#39;).style.display=&#39;none&#39;;">
+			<div class="bubble_top"><span></span></div>
+			<div class="bubble_middle"><span id="bubble_tooltip_content"></span></div>
+			<div class="bubble_bottom"></div>
+		</div>
+		<iframe id="hiddenFrame" name="hiddenFrame" src="" marginheight="0" height="0" style="border:0"></iframe>	
+		<div id="clearfooter"></div> <!--push for footer-->
+
+	</div> <!--end content-outer-->
+
+
+	<!-- footer starts-->
+	<div id="footer" align="center">
+		<br><span class="noprt"><a href="http://www.auckland.ac.nz/uoa/home/copyright">© The University of Auckland 2013</a> | <a href="http://cad.auckland.ac.nz/index.php?p=coursebuilder">Powered by CourseBuilder</a></span><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2385793-21']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> &nbsp;&nbsp;	
+	</div> <!--end footer -->
+
+
+</body></html>

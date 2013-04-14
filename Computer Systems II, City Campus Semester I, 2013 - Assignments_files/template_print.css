@@ -1,0 +1,134 @@
+/*  Copyright University of Auckland 2004
+	Created by Brent Simpson, brent.simpson@auckland.ac.nz
+	Centre for Flexible and Distance Learning
+*/
+
+/* this CSS is for formatting printing of course pages */
+
+#navcontainer { display: none; }
+		
+#main { 
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding:0;
+		width:100% !important;
+		border:0 !important;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: small;
+		font-weight: normal;
+		color: #000;
+		background-color: #FFFFFF; }
+#content {
+	width:100% !important;
+	margin:0 !important;
+	padding:0 !important;
+	border:0 !important;
+}
+#main p { line-height: 140%;}				
+
+p.print { page-break-before: always; }
+
+.icon { 	
+		font-size: large;
+		font-weight: normal;
+		font-stretch: wider;
+		}	
+		
+.header, .bar, .noprt { display: none; }
+
+/* SCHEDULE TABLE */
+
+#schedule {
+	border-top: 1px solid #000;	
+	border-left: 1px solid #000;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fff;
+	}
+	
+#schedule td {
+	border-bottom: 1px solid #000;	
+	border-right: 1px solid #000;
+	padding: 5px;
+	vertical-align: top;
+	}
+	
+.tickbox {
+	margin: 4px 4px 6px 0px;
+	}
+	
+body {
+	background-color: #FFFFFF;
+	margin: 0 0 0 0; padding: 0 0 0 0;
+	width:100% !important;
+	border:0 !important;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+	}
+
+.quote {
+	display: block;
+	margin: 0px 0px 10px 20px;
+	}
+	
+.p-shadow img {
+	border: 1px solid #a9a9a9;
+}
+	
+ h1 {
+ 	font-size: x-large;
+ }
+
+ #caption {
+   color: #777;
+	display:block;
+	font: italic 0.8em Arial, Helvetica, sans-serif;
+	margin-top: 4px;
+ }
+ 
+ #question {
+}
+
+#question span {
+	padding-top: 6px;
+	margin-left: 40px;
+	display: block;
+}
+
+#question img {
+	float: left;
+}
+.caseStudyHidden, .accordion_content{
+	display:block !important;
+}
+.hideShowDesc{
+	display:none;
+}
+.sIFR-flash {
+  display    : none !important;
+  height     : 0;
+  width      : 0;
+  position   : absolute;
+  overflow   : hidden;
+}
+
+.sIFR-alternate {
+  visibility : visible !important;
+  display    : block   !important;
+  position   : static  !important;
+  left       : auto    !important;
+  top        : auto    !important;
+  width      : auto    !important;
+  height     : auto    !important;
+}
+.horizontalaccordion>ul>li>div {
+	display:block;
+}
+div.section{
+display:block !important;
+}
